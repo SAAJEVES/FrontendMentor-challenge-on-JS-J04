@@ -1,0 +1,947 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    /* intro and email sign up background */
+    --dbHBG: hsl(217, 28%, 15%);
+    
+
+    /* main background */
+    --dbMBG: hsl(218, 28%, 13%);
+    /* NB: bg-curvy svg blends with this */
+
+    /* footer background */
+    --dbFBG: hsl(216, 53%, 9%);
+
+    /* testimonials background */
+    --dbTBG: hsl(219, 30%, 18%);
+
+    /* inside call-to-action gradient */
+    --cCTA1: hsl(176, 68%, 64%);
+    --cCTA2: hsl(198, 60%, 50%);
+
+    /* error */
+    --lrERROR: hsl(0, 100%, 63%);
+
+    /* font color */
+    --wFC: hsl(0, 0%, 100%);
+}
+
+body {
+    color: var(--wFC);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Reset */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--wFC);
+}
+
+
+
+/* ------------------------------------
+
+header styling starts 
+
+------------------------------------*/
+header {
+    width: 100%;
+}
+
+.header-bgcolor {
+    width: 100%;
+    background: var(--dbHBG);
+}
+
+.header-bg {
+    width: 100%;
+    padding-bottom: 200px;
+    background: url(bg-curvy-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* header-top starts */
+.header-top {
+    width: 100%;
+    padding: 40px;
+}
+
+.header-top-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-flex-left {
+    flex-basis: 50%;
+}
+
+.header-top-flex-left-image {
+    width: 100%;
+}
+
+.header-top-flex-left-image img {
+    width: 120px;
+}
+
+.header-top-flex-right{
+    flex-basis: 50%;
+}
+
+.header-top-flex-right ul {
+    text-align: right;
+}
+
+.header-top-flex-right ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header-top-flex-right ul li a {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-top-flex-right ul li a:hover {
+    text-decoration: underline;
+}
+/* header-top ends */
+
+/* header-bottom starts */
+.header-bottom {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-bottom-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.header-bottom-image img {
+    width: 100%;
+    min-width: 250px;
+    object-fit: contain;
+}
+
+.header-bottom-intro {
+    width: 100%;
+}
+
+.header-bottom-intro h2 {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 25px;
+}
+
+.header-bottom-intro p {
+    font-size: 1.9rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.header-bottom-intro a {
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 0;
+    display: inline-block;
+    width: 40%;
+    background: linear-gradient(to right,var(--cCTA1), var(--cCTA2));
+    border-radius: 30px;
+}
+/* header-bottom ends */
+
+
+/* ------------------------------------
+
+header styling ends 
+
+------------------------------------*/
+
+/* ------------------------------------
+
+main styling starts 
+
+------------------------------------*/
+main {
+    width: 100%;
+}
+
+.main-bgcolor {
+    width: 100%;
+    background-color: var(--dbMBG);
+    position: relative;
+    padding-bottom: 200px;
+}
+/* main top starts */
+.main-top {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-top-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8%;
+}
+
+.main-top-flex-sub {
+    flex-basis: 46%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-top-flex-sub-image {
+    width: 100%;
+    height: 100px;
+}
+
+.main-top-flex-sub-image img {
+    object-fit: contain;
+}
+
+.main-top-flex-sub-info {
+    width: 100%;
+}
+
+.main-top-flex-sub-info h3 {
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 7px;
+}
+
+.main-top-flex-sub-info p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+}
+/* main top ends */
+
+/* Main mid starts */
+.main-mid {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.main-mid-flex {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.main-mid-left {
+    width: 100%;
+}
+
+.main-mid-image {
+    width: 100%;
+}
+
+.main-mid-image img {
+    width: 100%;
+    min-width: 250px;
+    object-fit: contain;
+}
+
+.main-mid-right {
+    width: 100%;
+}
+
+.main-mid-right-info {
+    width: 100%;
+}
+
+.main-mid-right-info h2 {
+    width: 100%;
+    font-size: 4.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+}
+
+.main-mid-right-info p {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+}
+
+.main-mid-right-info .special {
+    width: max-content;
+    display: inline-block;
+    padding: 3px 0;
+    border-bottom: 1px solid var(--cCTA1);
+    color: var(--cCTA1);
+    line-height: 1.5;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.main-mid-right-info .special:hover {
+    border-bottom: 1px solid var(--wFC);
+    color: var(--wFC);
+}
+
+.main-mid-right-info .special img {
+    display: inline-block;
+}
+/* Main mid ends */
+
+/* Main bottom starts */
+.main-bottom {
+    width: 100%;
+}
+
+.main-bottom-bg {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 10px;
+    background: url(bg-quotes.png);
+    background-repeat: no-repeat;
+}
+
+.main-bottom-flex {
+    display: flex;
+    gap: 30px;
+}
+
+.main-bottom-flex-sub {
+    width: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    background: var(--dbTBG);
+}
+
+.main-bottom-flex-sub-info {
+    width: 100%;
+}
+
+.main-bottom-flex-sub-info > p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.main-bottom-flex-sub-info-profile {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.image-container img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+.staus-container .name {
+    font-size: 1.7rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3px;
+}
+
+.staus-container .position {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Main bottom ends */
+
+/* main cta begins */
+.main-cta {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.158);
+    position: absolute;
+    bottom: -9%;
+    left: 20%;
+    right: 20%;
+}
+
+.main-cta-container {
+    text-align: center;
+    background: var(--dbHBG);
+    padding: 30px 50px;
+}
+
+.main-cta-container h2 {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.main-cta-container p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.main-cta-form {
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+form .email-container {
+width: 100%;
+flex-basis: 59%;
+}
+
+form .email-container p {
+    font-size: 1rem;
+    color: var(--lrERROR);
+    text-align: left;
+    padding: 5px 15px;
+    margin: 0;
+}
+
+form .email-container #email {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+}
+
+form .email-container #email::placeholder {
+    opacity: .5;
+}
+
+form .submit-container {
+    width: 100%;
+    flex-basis: 39%;
+}
+
+form .submit-container #btn {
+    font-family: 'Raleway', sans-serif;
+    color: var(--wFC);
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 10px;
+    background: linear-gradient(to right,var(--cCTA1), var(--cCTA2));
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* main cta ends */
+
+
+/* ------------------------------------
+
+main styling ends 
+
+------------------------------------*/
+
+/* ------------------------------------
+
+footer styling starts 
+
+------------------------------------*/
+footer {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-bgcolor {
+    background: var(--dbFBG);
+    padding: 50px;
+    padding-top: 170px;
+}
+
+/* footer top starts */
+.footer-top {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-image {
+    width: 100%;
+}
+
+.footer-image img {
+    width: 120px;
+}
+/* footer top ends */
+
+/* footer bottom starts */
+.footer-bottom {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-bottom-flex {
+    display: flex;
+    gap: 5%;
+}
+
+.footer-bottom-flex-sub ul {
+    width: 100%;
+}
+
+.footer-bottom-flex-sub ul li{
+    margin-bottom: 25px;
+}
+
+.footer-bottom-flex-sub ul li a {
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    transition: 400ms;
+}
+
+.footer-bottom-flex-sub ul li a:hover {
+    font-weight: 700;
+}
+
+.one {
+    flex-basis: 30%;
+}
+
+.two {
+    flex-basis: 15%;
+}
+
+.three,
+.four{
+    flex-basis: 12%;
+}
+
+.five {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.footer-bottom-flex-sub-flex {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.five a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    padding: 7px;
+    border: 1px solid var(--wFC);
+    border-radius: 100%;
+}
+
+.five a i {
+    font-size: 1.4rem;
+    
+}
+
+.five a:hover {
+    border-color: var(--cCTA1);
+    transition: 400ms;
+}
+
+.five a:hover i {
+    color: var(--cCTA1);
+}
+/* footer bottom ends */
+
+/* attrirbution starts */
+.attribution {
+    font-size: 1.3rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/* attrirbution ends */
+
+/*------------------------------------
+
+footer styling ends 
+
+------------------------------------*/
+
+
+/*------------------------------------
+
+other screen styling starts 
+
+------------------------------------*/
+
+/* Max-width: 1100px styling starts */
+@media screen and (max-width: 1100px) {
+    .main-bottom-flex-sub {
+        padding: 15px;
+    }
+
+    .main-bottom-flex-sub-info > p {
+        font-size: 1.5rem;
+    }
+
+    .image-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .staus-container .name {
+        font-size: 1.5rem;
+    }
+
+    .main-cta {
+        width: 60%;
+    }
+}
+/* Max-width: 1100px styling ends */
+
+/* Max-width: 900px styling starts */
+
+@media screen and (max-width: 900px) {
+    .header-bottom {
+        width: 65%;
+    }
+
+    .header-bottom-intro h2 {
+        font-size: 3rem;
+    }
+
+    .header-bottom-intro p {
+        font-size: 1.7rem
+    }
+
+    .main-top {
+        width: 80%;
+    }
+
+    .main-mid-flex {
+        width: 85%;
+    }
+
+    .main-mid-right-info h2 {
+        font-size: 3.1rem;
+    }
+
+    .main-mid-right-info p {
+        font-size: 1.4rem;
+    }
+
+    .main-bottom-bg{
+        width: 85%;
+    }
+
+    .main-bottom-flex {
+        gap: 20px;
+    }
+
+    .main-bottom-flex-sub-info > p {
+        font-size: 1.4rem;
+    }
+    
+    .image-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .staus-container .name {
+        font-size: 1.3rem;
+    }
+
+    .staus-container .position {
+        font-size: 1rem;
+    }
+
+    .main-cta {
+        width: 70%;
+        left: 15%;
+    }
+
+    form .email-container #email {
+        font-size: 1.5rem;
+    }
+
+    form .submit-container #btn {
+        font-size: 1.5rem;
+    }
+
+    .footer-bgcolor {
+        padding: 30px;
+        padding-top: 170px;
+    }
+
+    .five {
+        flex-basis: 24%;
+    }
+
+    .five a {
+        margin: 3px;
+    }
+}
+/* Max-width: 900px styling ends */
+
+
+/* Max-width: 768px styling starts */
+@media screen and (max-width: 768px) {
+    .header-top {
+        padding: 25px;
+    }
+
+    .header-top-flex-left-image img {
+        width: 100px;
+    }
+
+    .header-top-flex-right ul li {
+        padding: 0 10px;
+    }
+
+    .header-top-flex-right ul li a {
+        font-size: 1.6rem;
+    }
+
+    .header-bottom {
+        width: 70%;
+    }
+
+    .header-bottom-intro h2 {
+        font-size: 2.8rem;
+    }
+
+    .header-bottom-intro p {
+        font-size: 1.6rem;
+    }
+
+    .header-bottom-intro a {
+        width: 60%;
+    }
+
+    .main-top {
+        width: 88%;
+    }
+
+    .main-top-flex-sub-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .main-top-flex-sub-info p {
+        font-size: 1.2rem;
+    }
+
+    .main-mid-right-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .main-cta {
+        width: 85%;
+        left: 7%;
+    }
+}
+/* Max-width: 768px styling ends */
+
+/* Max-width: 600px styling starts */
+@media screen and (max-width: 600px) {
+    .main-bottom-flex {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .footer-bottom-flex {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-bottom-flex-sub ul li a {
+        font-size: 1.7rem;
+    }
+
+    .text {
+        font-size: 1.7rem;
+    }
+}
+/* Max-width: 600px styling ends */
+
+/*------------------------------------
+
+other screen styling ends 
+
+------------------------------------*/
+
+
+/* --------------------------------
+    mobile styling starts
+---------------------------------- */
+@media screen and (max-width: 425px) {
+    .header-bg {
+        background: url(bg-curvy-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 20px;
+    }
+
+    .header-top {
+        padding: 20px;
+    }
+
+    .header-top-flex-left {
+        flex-basis: 10%;
+    }
+
+    .header-top-flex-left-image img {
+        width: 80px;
+    }
+
+    .header-top-flex-right {
+        flex-basis: 90%;
+    }
+
+    .header-top-flex-right ul li {
+        padding: 0 10px;
+    }
+
+    .header-top-flex-right ul li a {
+        font-size: 1.4rem;
+    }
+
+    .header-bottom {
+        width: 90%;
+    }
+
+    .header-bottom-intro h2 {
+        font-size: 2.5rem;
+    }
+
+    .header-bottom-intro p {
+        font-size: 1.3rem;
+    }
+
+    .header-bottom-intro a {
+        font-size: 1.5rem;
+        width: 60%;
+    }
+
+    .main-bgcolor {
+        padding-top: 50px;
+    }
+
+    .main-top {
+        width: 80%;
+    }
+
+    .main-top-flex {
+        flex-direction: column;
+    }
+
+    .main-top-flex-sub-info p {
+        font-size: 1.4rem;
+    }
+
+    .main-mid-flex {
+        flex-direction: column;
+    }
+
+    .main-mid-right-info h2 {
+        font-size: 2.3rem;
+    }
+
+    .main-mid-right-info p {
+        font-size: 1.4rem;
+    }
+
+    .main-bottom-flex {
+        flex-direction: column;
+    }
+
+    .main-bottom-flex-sub-info > p {
+        font-size: 1.4rem;
+    }
+
+    .image-container img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .staus-container .name {
+        font-size: 1.3rem;
+    }
+
+    .staus-container .position {
+        font-size: 1.1rem;
+    }
+
+    .main-cta {
+        width: 90%;
+        bottom: -6%;
+        left: 20px;
+        right: 20px;
+    }
+
+    .main-cta-container h2 {
+        font-size: 2rem;
+    }
+
+    .main-cta-container p {
+        font-size: 1.3rem;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form .email-container #email {
+        padding: 9px 15px;
+        font-size: 1.4rem;
+    }
+
+    form .submit-container #btn {
+        padding: 9px;
+        font-size: 1.4rem;
+    }
+
+    .footer-image img {
+        width: 100px;
+    }
+
+    .footer-bottom-flex {
+        flex-direction: column;
+        gap: 7%;
+    }
+
+    .footer-bottom-flex-sub {
+        margin-bottom: 12px;
+    }
+}
+/* --------------------------------
+    mobile styling ends
+---------------------------------- */
